@@ -1,0 +1,21 @@
+--cpu Cortex-M3
+".\objects\media_center.o"
+".\objects\glcd_spi_lpc1700.o"
+".\objects\kbd.o"
+".\objects\led.o"
+".\objects\dog.o"
+".\objects\lamb.o"
+".\objects\fox.o"
+".\objects\tiger.o"
+".\objects\led_mcb1700.o"
+"C:\Users\ECBME\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\RTOS\RTX\LIB\ARM\RTX_CM3.lib"
+".\objects\rtx_conf_cm.o"
+".\objects\eventrecorder.o"
+".\objects\gpio_lpc17xx.o"
+".\objects\pin_lpc17xx.o"
+".\objects\startup_lpc17xx.o"
+".\objects\system_lpc17xx.o"
+--strict --scatter ".\Objects\media_center.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\media_center.map" -o .\Objects\media_center.axf
